@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Tip Calculator</title>
+</head>
+
+<body>
+  <main>
+    <img src="assets/logo.svg" alt="Logo">
+    <section class="calculator">
+      <div class="calculator-first">
+        <label class="lbl-default">Bill</label>
+        <input class="input-default" id="inpt-bill" type="number">
+
+        <label class="lbl-default"> Select Tip %</label>
+
+        <div class="amount-tip-grid">
+
+          <button id="btn-default" class="btn-grid is-active" data-count="5">5%</button>
+          <button class="btn-grid" data-count="15">10%</button>
+          <button class="btn-grid" data-count="15">15%</button>
+          <button class="btn-grid" data-count="25">25%</button>
+          <button class="btn-grid" data-count="50">50%</button>
+          <input id="input-grid" type="number" placeholder="Custom">
+
+        </div>
+
+        <div class="div-people">
+          <label class="lbl-default">Number of People</label>
+
+          <span class="error-zero hidden">Can't be Zero</span>
+        </div>
+        <input id="inpt-people" class="input-default" type="number">
+
+      </div>
+
+
+      <div class="calculator-second">
+        <section class="second-items">
+          <div class="">
+            <label class="lbl-final">Tip Amount</label>
+            <br>
+            <small class="small">/ person</small>
+          </div>
+          <h3 id="tip-amount" class="amount-final">$0.00</h3>
+
+          <div class="">
+            <label class="lbl-final">Total</label>
+            <br>
+            <small class="small">/ person</small>
+          </div>
+          <h3 id="total" class="amount-final">$0.00</h3>
+        </section>
+
+        <button class="btn-reset">RESET</button>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
